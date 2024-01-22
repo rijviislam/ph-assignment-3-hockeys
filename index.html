@@ -6,16 +6,16 @@
     <title>Hockyes</title>
     <html data-theme="light"></html>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
     />
     <style>
       .my-font {
@@ -23,9 +23,133 @@
       }
     </style>
   </head>
+  <header class="flex items-center justify-center">
+    <!-- BANNER SECTION  -->
+    <div class="carousel w-[1170px] lg:h-[550px] mt-6 lg:mt-12">
+      <div
+        id="slide1"
+        class="carousel-item relative w-[355px] lg:w-full flex flex-col"
+      >
+        <img
+          src="./assets/1.png"
+          class="lg:w-full h-[200px] lg:h-full lg:object-cover rounded-xl"
+        />
+        <div class="lg:w-full lg:h-full absolute flex gap-3 lg:gap-4">
+          <a
+            href="#slide4"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] lg:absolute lg:bottom-8 left-8"
+            >❮</a
+          >
+
+          <a
+            href="#slide2"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] lg:absolute lg:bottom-8 lg:left-[88px]"
+            >❯</a
+          >
+        </div>
+        <div
+          class="mt-4 bg-[#131318] lg:w-[566px] lg:h-[165px] flex flex-col gap-4 lg:gap-4 rounded-2xl p-4 lg:p-8 relative lg:absolute lg:bottom-8 lg:right-8"
+        >
+          <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium text-sm lg:text-base text-[#ffffff99]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+      <!-- <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="./assets//2.png"
+          class="lg:w-full lg:h-full object-cover rounded-xl"
+        />
+        <div class="lg:w-full lg:h-full absolute flex lg:gap-4">
+          <a
+            href="#slide1"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 left-8"
+            >❮</a
+          >
+          <a
+            href="#slide3"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 lg:left-[88px]"
+            >❯</a
+          >
+        </div>
+        <div
+          class="bg-[#131318] w-[566px] h-[165px] flex flex-col lg:gap-4 rounded-2xl p-8 lg:absolute lg:bottom-8 lg:right-8"
+        >
+          <h3 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium text-base text-[#ffffff99]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="./assets/3.png"
+          class="lg:w-full lg:h-full object-cover rounded-xl"
+        />
+        <div class="lg:w-full lg:h-full absolute flex lg:gap-4">
+          <a
+            href="#slide2"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 left-8"
+            >❮</a
+          >
+          <a
+            href="#slide4"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 lg:left-[88px]"
+            >❯</a
+          >
+        </div>
+        <div
+          class="bg-[#131318] w-[566px] h-[165px] flex flex-col lg:gap-4 rounded-2xl p-8 lg:absolute lg:bottom-8 lg:right-8"
+        >
+          <h3 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium text-base text-[#ffffff99]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative lg:w-full">
+        <img
+          src="./assets/4.png"
+          class="lg:w-full lg:h-full object-cover rounded-xl"
+        />
+        <div class="lg:w-full lg:h-full absolute flex lg:gap-4">
+          <a
+            href="#slide3"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 left-8"
+            >❮</a
+          >
+          <a
+            href="#slide1"
+            class="btn-circle flex items-center justify-center text-white bg-[#131318] absolute lg:bottom-8 lg:left-[88px]"
+            >❯</a
+          >
+        </div>
+        <div
+          class="bg-[#131318] w-[566px] h-[165px] flex flex-col lg:gap-4 rounded-2xl p-8 relative lg:absolute lg:bottom-8 lg:right-8"
+        >
+          <h3 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium text-base text-[#ffffff99]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </header>
   <body class="my-font">
-    <header class="content mx-auto border"></header>
-    <main class="content mx-auto border"></main>
-    <footer class="content mx-auto border"></footer>
+    <main class="content mx-auto"></main>
+    <footer></footer>
   </body>
 </html>
