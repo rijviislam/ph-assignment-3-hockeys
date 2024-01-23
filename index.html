@@ -11,6 +11,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +29,59 @@
   </head>
 
   <body class="my-font">
-    <header class="content mx-auto"></header>
+    <header class="content mx-auto">
+      <div class="navbar px-5">
+        <div class="navbar-start">
+          <div class="lg:hidden dropdown">
+            <div tabindex="0" role="button" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52"
+            >
+              <li class="text-[#FF4240]"><a>Home</a></li>
+              <li class="hover:text-[#FF4240]"><a>About</a></li>
+              <li class="hover:text-[#FF4240]"><a>Pages</a></li>
+              <li class="hover:text-[#FF4240]"><a>Blog</a></li>
+              <li class="hover:text-[#FF4240]"><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-2xl lg:text-4xl font-extrabold ml-4">Hockey’s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li class="hover:text-[#FF4240]"><a>About</a></li>
+            <li class="hover:text-[#FF4240]"><a>Pages</a></li>
+            <li class="hover:text-[#FF4240]"><a>Blog</a></li>
+            <li class="hover:text-[#FF4240]"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex lg:gap-6">
+          <a href="" class="hidden lg:block"
+            ><i class="bx bx-search text-2xl" style="color: #89898b"></i
+          ></a>
+          <a
+            class="bg-[#FF4240] px-4 py-2 lg:px-6 lg:py-4 text-[#FFFFFF] lg:font-bold lg:text-xl rounded-lg"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+    </header>
     <main class="content mx-auto">
       <!-- HOCKEYS CLUB SECTION  -->
       <section class="container mx-auto mt-10">
@@ -113,6 +169,105 @@
             <p class="text-base font-normal text-[#13131899]">
               Amet consectetur. Condimentum dignissim adipiscing .
             </p>
+          </div>
+        </div>
+      </section>
+      <!-- PROGRAM SECTION  -->
+      <section class="w-full mx-auto flex flex-col items-center justify-center">
+        <div
+          class="border-dashed border-t border-b border-[#13131833] py-6 mx-5 lg:py-8"
+        >
+          <h2
+            class="text-[#131318] text-xl lg:text-4xl font-extrabold text-center"
+          >
+            Program Sections
+          </h2>
+          <p class="text-center mt-6">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br />
+            dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div
+          class="lg:mt-12 lg:w-[1170px] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6"
+        >
+          <div
+            class="w-[355px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
+          >
+            <img
+              class="lg:w-full h-full absolute -z-10"
+              src="./assets/2.png"
+              alt=""
+            />
+            <div
+              class="lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+            >
+              <h3 class="font-extrabold text-[28px] text-white">
+                Junior Program
+              </h3>
+              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[355px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
+          >
+            <img
+              class="lg:w-full h-full absolute -z-10"
+              src="./assets/3.png"
+              alt=""
+            />
+            <div
+              class="lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+            >
+              <h3 class="font-extrabold text-[28px] text-white">
+                Junior Program
+              </h3>
+              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[355px] h-[244px] lg:w-[1170px] lg:h-[450px] relative bg-[#13131880] rounded-2xl col-span-2"
+          >
+            <img
+              class="lg:w-full h-full absolute -z-10 object-cover rounded-xl"
+              src="./assets/4.png"
+              alt=""
+            />
+            <div
+              class="w-1/2 h-1/2 lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+            >
+              <h3 class="font-extrabold text-[28px] text-white">
+                Junior Program
+              </h3>
+              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
           </div>
         </div>
       </section>
