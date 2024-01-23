@@ -29,8 +29,9 @@
   </head>
 
   <body class="my-font">
-    <header class="content mx-auto">
-      <div class="navbar px-5">
+    <header class="container mx-auto">
+      <!-- NAVIGATION BAR  -->
+      <div class="navbar w-full lg:w-[1170px]">
         <div class="navbar-start">
           <div class="lg:hidden dropdown">
             <div tabindex="0" role="button" class="lg:hidden">
@@ -60,10 +61,10 @@
               <li class="hover:text-[#FF4240]"><a>Contact</a></li>
             </ul>
           </div>
-          <a class="text-2xl lg:text-4xl font-extrabold ml-4">Hockey’s</a>
+          <a class="text-2xl ml-1 lg:text-4xl font-extrabold">Hockey’s</a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal">
             <li class="text-[#FF4240]"><a>Home</a></li>
             <li class="hover:text-[#FF4240]"><a>About</a></li>
             <li class="hover:text-[#FF4240]"><a>Pages</a></li>
@@ -79,6 +80,107 @@
             class="bg-[#FF4240] px-4 py-2 lg:px-6 lg:py-4 text-[#FFFFFF] lg:font-bold lg:text-xl rounded-lg"
             >Get Ticket</a
           >
+        </div>
+      </div>
+      <!-- BANNER SECTION  -->
+      <div class="px-5">
+        <div class="carousel w-full lg:mt-16">
+          <div
+            id="slide1"
+            class="carousel-item relative flex flex-col gap-4 w-full lg:h-[550px]"
+          >
+            <img
+              src="./assets/1.png"
+              class="w-full h-[200px] lg:h-full rounded-xl object-fill"
+            />
+            <div class="absolute top-[150px] right-[134px] w-[68px] flex gap-3">
+              <a href="#slide4" class="btn btn-circle w-[28px] h-[28px]">❮</a>
+              <a href="#slide2" class="btn btn-circle w-[28px] h-[28px]">❯</a>
+            </div>
+            <div
+              class="bg-[#131318] lg:w-[566px] lg:h-[165px] flex flex-col gap-4 lg:gap-4 rounded-2xl p-4 lg:p-8 lg:absolute lg:bottom-8 lg:right-8"
+            >
+              <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+                Meet all the heroes from the field
+              </h3>
+              <p class="font-medium text-sm lg:text-base text-[#ffffff99]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative flex flex-col gap-4 w-full lg:h-[550px]"
+          >
+            <img
+              src="./assets/2.png"
+              class="w-full h-[200px] lg:h-full rounded-xl object-fill"
+            />
+            <div class="absolute w-[68px] flex gap-3 top-[150px] right-[134px]">
+              <a href="#slide1" class="btn btn-circle w-[28px] h-[28px]">❮</a>
+              <a href="#slide3" class="btn btn-circle w-[28px] h-[28px]">❯</a>
+            </div>
+            <div
+              class="bg-[#131318] lg:w-[566px] lg:h-[165px] flex flex-col gap-4 lg:gap-4 rounded-2xl p-4 lg:p-8 lg:absolute lg:bottom-8 lg:right-8"
+            >
+              <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+                Meet all the heroes from the field
+              </h3>
+              <p class="font-medium text-sm lg:text-base text-[#ffffff99]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative flex flex-col gap-4 w-full lg:h-[550px]"
+          >
+            <img
+              src="./assets/3.png"
+              class="w-full h-[200px] lg:h-full rounded-xl object-fill"
+            />
+            <div class="absolute w-[68px] flex gap-3 top-[150px] right-[134px]">
+              <a href="#slide2" class="btn btn-circle w-[28px] h-[28px]">❮</a>
+              <a href="#slide4" class="btn btn-circle w-[28px] h-[28px]">❯</a>
+            </div>
+            <div
+              class="bg-[#131318] lg:w-[566px] lg:h-[165px] flex flex-col gap-4 lg:gap-4 rounded-2xl p-4 lg:p-8 lg:absolute lg:bottom-8 lg:right-8"
+            >
+              <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+                Meet all the heroes from the field
+              </h3>
+              <p class="font-medium text-sm lg:text-base text-[#ffffff99]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative flex flex-col gap-4 w-full lg:h-[550px]"
+          >
+            <img
+              src="./assets/4.png"
+              class="w-full h-[200px] lg:h-full rounded-xl object-fill"
+            />
+            <div class="absolute w-[68px] flex gap-3 top-[150px] right-[134px]">
+              <a href="#slide3" class="btn btn-circle w-[28px] h-[28px]">❮</a>
+              <a href="#slide1" class="btn btn-circle w-[28px] h-[28px]">❯</a>
+            </div>
+            <div
+              class="bg-[#131318] lg:w-[566px] lg:h-[165px] flex flex-col gap-4 lg:gap-4 rounded-2xl p-4 lg:p-8 lg:absolute lg:bottom-8 lg:right-8"
+            >
+              <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+                Meet all the heroes from the field
+              </h3>
+              <p class="font-medium text-sm lg:text-base text-[#ffffff99]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -175,7 +277,7 @@
       <!-- PROGRAM SECTION  -->
       <section class="w-full mx-auto flex flex-col items-center justify-center">
         <div
-          class="border-dashed border-t border-b border-[#13131833] py-6 mx-5 lg:py-8"
+          class="border-dashed border-t border-b border-[#13131833] py-6 px-4 lg:py-8"
         >
           <h2
             class="text-[#131318] text-xl lg:text-4xl font-extrabold text-center"
@@ -184,86 +286,89 @@
           </h2>
           <p class="text-center mt-6">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat <br />
-            dolor. Purus urna in sit nullam proin.
+            turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
-        <div
-          class="lg:mt-12 lg:w-[1170px] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6"
-        >
+        <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
           <div
-            class="w-[355px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
+            class="w-[335px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
           >
             <img
-              class="lg:w-full h-full absolute -z-10"
+              class="w-full h-full absolute -z-10 object-cover rounded-2xl"
               src="./assets/2.png"
               alt=""
             />
             <div
-              class="lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+              class="w-full h-full absolute py-6 pl-6 pr-8 lg:pl-10 lg:pt-[95px]"
             >
-              <h3 class="font-extrabold text-[28px] text-white">
+              <h3 class="font-extrabold text-xl lg:text-[28px] text-white">
                 Junior Program
               </h3>
-              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+              <p
+                class="text-sm lg:text-base text-white font-medium mt-3 mb-5 lg:mt-4 lg:mb-6"
+              >
                 Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                 elit enim sagittis turpis in magna. Id et sed euismod natoque
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
               >
                 Register Now!
               </button>
             </div>
           </div>
           <div
-            class="w-[355px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
+            class="w-[335px] h-[244px] lg:w-[573px] lg:h-[338px] relative bg-[#13131880] rounded-2xl"
           >
             <img
-              class="lg:w-full h-full absolute -z-10"
+              class="w-full h-full absolute -z-10 object-cover rounded-2xl"
               src="./assets/3.png"
               alt=""
             />
             <div
-              class="lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+              class="w-full h-full absolute py-6 pl-6 pr-8 lg:pl-10 lg:pt-[95px]"
             >
-              <h3 class="font-extrabold text-[28px] text-white">
-                Junior Program
+              <h3 class="font-extrabold text-xl lg:text-[28px] text-white">
+                Teenager Program
               </h3>
-              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+              <p
+                class="text-sm lg:text-base text-white font-medium mt-3 mb-5 lg:mt-4 lg:mb-6"
+              >
                 Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                 elit enim sagittis turpis in magna. Id et sed euismod natoque
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
               >
                 Register Now!
               </button>
             </div>
           </div>
           <div
-            class="w-[355px] h-[244px] lg:w-[1170px] lg:h-[450px] relative bg-[#13131880] rounded-2xl col-span-2"
+            class="w-[335px] h-[244px] lg:w-full lg:h-[450px] relative bg-[#13131880] rounded-2xl lg:col-span-2"
           >
             <img
-              class="lg:w-full h-full absolute -z-10 object-cover rounded-xl"
+              class="w-full h-full absolute -z-10 object-cover rounded-2xl"
               src="./assets/4.png"
               alt=""
             />
             <div
-              class="w-1/2 h-1/2 lg:w-[495px] lg:h-[203px] absolute lg:bottom-10 lg:left-10"
+              class="w-full lg:w-[520px] h-full absolute py-6 pl-6 pr-8 lg:pl-10 lg:pt-[207px]"
             >
-              <h3 class="font-extrabold text-[28px] text-white">
-                Junior Program
+              <h3 class="font-extrabold text-xl lg:text-[28px] text-white">
+                Professional Program
               </h3>
-              <p class="text-base text-white font-medium lg:mt-4 lg:mb-6">
+              <p
+                class="text-sm lg:text-base text-white font-medium mt-3 mb-5 lg:mt-4 lg:mb-6"
+              >
                 Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                 elit enim sagittis turpis in magna. Id et sed euismod natoque
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
               >
                 Register Now!
               </button>
