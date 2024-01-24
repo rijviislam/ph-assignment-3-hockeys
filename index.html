@@ -44,7 +44,7 @@
     <!-- HEADER SECTION  -->
     <header class="container mx-auto lg:mt-[50px]">
       <!-- NAVIGATION BAR  -->
-      <div class="px-3 border border-red-700">
+      <div class="px-3">
         <div class="navbar w-full lg:w-[1170px]">
           <div class="navbar-start">
             <div class="lg:hidden dropdown">
@@ -66,7 +66,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 bg-white"
               >
                 <li class="text-[#FF4240]"><a>Home</a></li>
                 <li class="hover:text-[#FF4240]"><a>About</a></li>
@@ -80,12 +80,22 @@
             >
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal">
-              <li class="text-[#FF4240]"><a>Home</a></li>
-              <li class="hover:text-[#FF4240]"><a>About</a></li>
-              <li class="hover:text-[#FF4240]"><a>Pages</a></li>
-              <li class="hover:text-[#FF4240]"><a>Blog</a></li>
-              <li class="hover:text-[#FF4240]"><a>Contact</a></li>
+            <ul class="menu-horizontal flex lg:gap-11">
+              <li class="text-[#FF4240] cursor-pointer transition">
+                <a>Home</a>
+              </li>
+              <li class="hover:text-[#FF4240] cursor-pointer transition">
+                <a>About</a>
+              </li>
+              <li class="hover:text-[#FF4240] cursor-pointer transition">
+                <a>Pages</a>
+              </li>
+              <li class="hover:text-[#FF4240] cursor-pointer transition">
+                <a>Blog</a>
+              </li>
+              <li class="hover:text-[#FF4240] cursor-pointer transition">
+                <a>Contact</a>
+              </li>
             </ul>
           </div>
           <div class="navbar-end flex lg:gap-6">
@@ -93,13 +103,13 @@
               ><i class="bx bx-search text-2xl" style="color: #89898b"></i
             ></a>
             <a
-              class="bg-[#FF4240] hover:bg-white hover:text-[#FF4240] px-4 py-2 lg:px-6 lg:py-4 text-[#FFFFFF] lg:font-bold lg:text-xl rounded-lg cursor-pointer border border-[#FF4240]"
+              class="bg-[#FF4240] hover:bg-white hover:text-[#FF4240] px-4 py-2 lg:px-6 lg:py-4 text-[#FFFFFF] lg:font-bold lg:text-xl rounded-lg cursor-pointer border border-[#FF4240] transition"
               >Get Ticket</a
             >
           </div>
         </div>
       </div>
-      <!-- NEED TO MORE FIX THIS SECTION  -->
+      <!-- BANNER SECTION  -->
       <div class="px-5">
         <div class="carousel w-full lg:mt-[50px]">
           <div
@@ -436,7 +446,7 @@
       >
         <!-- COMMON HEADER FOR EVERY SECTION  -->
         <div
-          class="border-dashed mx-5 border-t border-b border-[#13131833] py-6 lg:py-8 flex flex-col items-center"
+          class="border-dashed lg:w-full mx-5 border-t border-b border-[#13131833] py-6 lg:py-8 flex flex-col items-center"
         >
           <h2
             class="text-[#131318] text-xl lg:text-4xl font-extrabold text-center"
@@ -472,7 +482,7 @@
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border hover:bg-transparent border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold transition-all"
               >
                 Register Now!
               </button>
@@ -500,7 +510,7 @@
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border hover:bg-transparent border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold transition-all"
               >
                 Register Now!
               </button>
@@ -528,7 +538,7 @@
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <button
-                class="py-2 px-5 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold"
+                class="py-2 px-5 rounded-lg border hover:bg-transparent border-[#FF4240] bg-[#FF4240] text-white text-lg lg:text-[22px] font-bold transition-all"
               >
                 Register Now!
               </button>
@@ -557,7 +567,7 @@
           class="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-6 mt-6 lg:mt-12"
         >
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -601,7 +611,7 @@
             </div>
           </div>
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -645,7 +655,7 @@
             </div>
           </div>
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -689,7 +699,7 @@
             </div>
           </div>
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -733,7 +743,7 @@
             </div>
           </div>
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -777,7 +787,7 @@
             </div>
           </div>
           <div
-            class="rounded-2xl w-[335px] lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
+            class="rounded-2xl w-[335px] cursor-pointer lg:w-full border border-[#1313181a] flex flex-col items-center justify-center lg:flex-row p-6 gap-5"
           >
             <figure>
               <img
@@ -963,7 +973,7 @@
             class="grid place-items-center mt-6 py-6 w-[335px] lg:w-1/3 gap-6 grid-cols-1 border border-[#1313181a] rounded-2xl lg:p-[50px]"
           >
             <div
-              class="w-[287px] h-[216px] lg:w-[309px] bg-[#bced6d1a] p-8 rounded-2xl"
+              class="w-[287px] h-[216px] lg:w-[309px] bg-[#bced6d1a] p-8 rounded-2xl cursor-pointer"
             >
               <img src="./assets/Group 1171275317.png" alt="" />
               <p class="lg:mt-6 flex flex-col">
@@ -976,7 +986,7 @@
               </p>
             </div>
             <div
-              class="w-[287px] h-[216px] lg:w-[309px] bg-[#FDDD5F1A] p-8 rounded-2xl"
+              class="w-[287px] h-[216px] lg:w-[309px] bg-[#FDDD5F1A] p-8 rounded-2xl cursor-pointer"
             >
               <img src="./assets/Group 1171275318.png" alt="" />
               <p class="lg:mt-6 flex flex-col">
@@ -989,7 +999,7 @@
               </p>
             </div>
             <div
-              class="w-[287px] h-[216px] lg:w-[309px] bg-[#629CF31A] p-8 rounded-2xl"
+              class="w-[287px] h-[216px] lg:w-[309px] bg-[#629CF31A] p-8 rounded-2xl cursor-pointer"
             >
               <img src="./assets/Group 1171275321.png" alt="" />
               <p class="lg:mt-6 flex flex-col">
@@ -1067,7 +1077,7 @@ Write your message</textarea
               </label>
             </div>
             <button
-              class="w-[335px] lg:w-[672px] py-4 px-6 text-xl font-bold text-white bg-[#FF4240] border border-[#FF4240] rounded-xl cursor-pointer"
+              class="w-[335px] lg:w-[672px] py-4 px-6 text-xl font-bold hover:bg-transparent hover:text-[#FF4240] transition-all text-white bg-[#FF4240] border border-[#FF4240] rounded-xl cursor-pointer"
             >
               Send Message
             </button>
@@ -1078,10 +1088,18 @@ Write your message</textarea
         >
           <h3 class="text-[#131318] text-2xl font-extrabold">Social Media</h3>
           <div class="flex gap-3">
-            <i class="bx bxl-twitter text-2xl"></i>
-            <i class="bx bxl-meta text-2xl"></i>
-            <i class="bx bxl-instagram text-2xl"></i>
-            <i class="bx bxl-github text-2xl"></i>
+            <i
+              class="bx bxl-twitter text-2xl cursor-pointer hover:text-[#FF4240] transition-all"
+            ></i>
+            <i
+              class="bx bxl-meta text-2xl cursor-pointer hover:text-[#FF4240] transition-all"
+            ></i>
+            <i
+              class="bx bxl-instagram text-2xl cursor-pointer hover:text-[#FF4240] transition-all"
+            ></i>
+            <i
+              class="bx bxl-github text-2xl cursor-pointer hover:text-[#FF4240] transition-all"
+            ></i>
           </div>
         </div>
       </section>
@@ -1102,11 +1120,13 @@ Write your message</textarea
           Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
           dolor. Purus urna in sit nullam proin.
         </p>
-        <div class="text-white flex items-center gap-4 text-base font-medium">
+        <div
+          class="text-white flex items-center gap-4 text-base font-medium cursor-pointer hover:text-[#FF4240] transition-all"
+        >
           <img src="./assets/mail.svg" alt="" /> hockeys@support.com
         </div>
         <div
-          class="text-white flex items-center gap-4 text-base font-medium mt-4"
+          class="text-white flex items-center gap-4 text-base font-medium mt-4 cursor-pointer hover:text-[#FF4240] transition-all"
         >
           <img src="./assets/call.svg" alt="" /> (+62) 123-321-543
         </div>
