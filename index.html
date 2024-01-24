@@ -25,6 +25,18 @@
       .my-font {
         font-family: "Manrope", sans-serif;
       }
+      .progress_ring_circle {
+        stroke-dasharray: 300, 200;
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(-20deg);
+        transform-origin: 50% 50%;
+      }
+      .progress_ring_circle_two {
+        stroke-dasharray: 300, 200;
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+      }
     </style>
   </head>
 
@@ -250,73 +262,169 @@
         </div>
         <!-- HOCKEYS CLUB RADIAL PROGRESS  -->
         <div
-          class="mt-12 flex flex-col lg:flex-row justify-center items-center lg:gap-8"
+          class="mt-12 flex flex-col gap-6 lg:flex-row justify-center items-center lg:gap-8"
         >
-          <div
-            class="w-[250px] h-[239px] flex flex-col items-center justify-center text-center"
-          >
-            <div
-              class="radial-progress text-[#FF4240] h-[120px] w-[120px]"
-              style="--value: 87; --size: 8rem"
-              role="progressbar"
-            >
-              <span class="text-[#131318] text-[28px] font-extrabold">87%</span>
-            </div>
-            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
-              Prayer Facility
-            </h4>
-            <p class="text-base font-normal text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div
-            class="w-[250px] h-[239px] flex flex-col items-center justify-center text-center"
-          >
-            <div
-              class="radial-progress text-[#49D293]"
-              style="--value: 95; --size: 8rem"
-              role="progressbar"
-            >
-              <span class="text-[#131318] text-[28px] font-extrabold">95%</span>
-            </div>
-            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
-              Experienced Coach
-            </h4>
-            <p class="text-base font-normal text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div
-            class="w-[250px] h-[239px] flex flex-col items-center justify-center text-center"
-          >
-            <div
-              class="radial-progress text-[#FFB546]"
-              style="--value: 90; --size: 8rem"
-              role="progressbar"
-            >
-              <span class="text-[#131318] text-[28px] font-extrabold">90%</span>
-            </div>
-            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
-              Senior Player
-            </h4>
-            <p class="text-base font-normal text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div
-            class="w-[250px] h-[239px] flex flex-col items-center justify-center text-center"
-          >
-            <div
-              class="radial-progress text-[#4C8DF1]"
-              style="--value: 80; --size: 8rem"
-              role="progressbar"
-            >
-              <span class="text-[#131318] text-[28px] font-extrabold">90%</span>
+          <div class="w-[250px] flex flex-col items-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle
+                  class="text-gray-200 stroke-current"
+                  stroke-width="10"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                ></circle>
+                <circle
+                  class="text-[#FF4240] progress_ring_circle stroke-current"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                  stroke-dashoffset="calc(-50)"
+                ></circle>
+
+                <text
+                  x="50"
+                  y="50"
+                  text-anchor="middle"
+                  font-family="Manrope"
+                  alignment-baseline="middle"
+                  class="my-font font-extrabold"
+                >
+                  87%
+                </text>
+              </svg>
             </div>
             <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
               Training Ground
             </h4>
-            <p class="text-base font-normal text-[#13131899]">
+            <p class="text-base font-normal text-[#13131899] text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="w-[250px] flex flex-col items-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle
+                  class="text-gray-200 stroke-current"
+                  stroke-width="10"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                ></circle>
+                <circle
+                  class="text-[#49D293] progress_ring_circle stroke-current"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                  stroke-dashoffset="calc(-30)"
+                ></circle>
+
+                <text
+                  x="50"
+                  y="50"
+                  text-anchor="middle"
+                  font-family="Manrope"
+                  alignment-baseline="middle"
+                  class="my-font font-extrabold"
+                >
+                  95%
+                </text>
+              </svg>
+            </div>
+            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
+              Experienced Coach
+            </h4>
+            <p class="text-base font-normal text-[#13131899] text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="w-[250px] flex flex-col items-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle
+                  class="text-gray-200 stroke-current"
+                  stroke-width="10"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                ></circle>
+                <circle
+                  class="text-[#FFB546] progress_ring_circle_two stroke-current"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                  stroke-dashoffset="calc(-40)"
+                ></circle>
+
+                <text
+                  x="50"
+                  y="50"
+                  text-anchor="middle"
+                  font-family="Manrope"
+                  alignment-baseline="middle"
+                  class="my-font font-extrabold"
+                >
+                  90%
+                </text>
+              </svg>
+            </div>
+            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
+              Senior Player
+            </h4>
+            <p class="text-base font-normal text-[#13131899] text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="w-[250px] flex flex-col items-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle
+                  class="text-gray-200 stroke-current"
+                  stroke-width="10"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                ></circle>
+                <circle
+                  class="text-[#4C8DF1] progress_ring_circle stroke-current"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  fill="transparent"
+                  stroke-dashoffset="calc(-60)"
+                ></circle>
+
+                <text
+                  x="50"
+                  y="50"
+                  text-anchor="middle"
+                  font-family="Manrope"
+                  alignment-baseline="middle"
+                  class="my-font font-extrabold"
+                >
+                  80%
+                </text>
+              </svg>
+            </div>
+            <h4 class="lg:mt-6 lg:mb-4 text-[#131318] font-semibold text-xl">
+              Training Ground
+            </h4>
+            <p class="text-base font-normal text-[#13131899] text-center">
               Amet consectetur. Condimentum dignissim adipiscing .
             </p>
           </div>
@@ -980,7 +1088,7 @@ Write your message</textarea
     </main>
     <!-- FOOTER SECTION  -->
     <footer
-      class="mx-auto flex lg:gap-[157px] lg:flex-row flex-col lg:items-start items-center lg:justify-normal justify-center mt-10 lg:mt-[100px] p-10 bg-[#131318] text-base-content"
+      class="lg:px-[135px] flex lg:gap-[157px] lg:flex-row flex-col lg:items-start items-center lg:justify-normal justify-center mt-10 lg:mt-[100px] p-10 bg-[#131318] text-base-content"
     >
       <aside
         class="w-[335px] flex flex-col lg:justify-normal justify-center items-center lg:items-start"
@@ -989,7 +1097,7 @@ Write your message</textarea
           Hockey<span class="text-[#FF4240]">’</span>s
         </h3>
         <p
-          class="mt-4 w-full lg:w-[346px] mb-6 text-base font-medium text-[#ffffff99] text-center lg:text-start"
+          class="lg:mt-4 mt-4 mb-5 w-full lg:w-[346px] lg:mb-6 text-base font-medium text-[#ffffff99] text-center lg:text-start"
         >
           Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
           dolor. Purus urna in sit nullam proin.
